@@ -9,3 +9,10 @@ const namePrinter = (firstName, lastName) => {
 
 namePrinter('Bob', 'Baxter');
 namePrinter('John', 'Doe');
+
+
+const nuggetizer = (animal) => {
+    return `processed ${animal}`;
+}
+
+console.log(nuggetizer('pig'));
