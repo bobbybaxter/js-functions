@@ -15,13 +15,13 @@ const nuggetizer = (animal) => {
     return `processed ${animal}`;
 }
 
-// console.log(nuggetizer('pig'));
+console.log(nuggetizer('pig'));
 
 const dogBreed = (breed) => {
     return `my favorite dog breed is ${breed}`;
 };
 
-// console.log(dogBreed('border collie'));
+console.log(dogBreed('border collie'));
 
 // const dogBreedDiv = document.getElementById('dog-breeds');
 // dogBreedDiv.innerHTML = dogBreed('bichon');
@@ -39,11 +39,9 @@ const printToDom = (divId, textToPrint) => {
 // printToDom('dog-breeds', dogBreed('lab'));
 // printToDom('nuggets', 'YUMMY');
 
-
-
-let bandNumber = 1;
 const addBand = (bandName) => {
     // do stuff
+    let bandNumber = 1;
     const listItem = `${bandNumber}. ${bandName}<br>`;
     bandNumber++;
     printToDom('band-list', listItem);
